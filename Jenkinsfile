@@ -6,7 +6,7 @@ pipeline {
                 docker build -t nginx-image . 
             }
         }
-		stage('Deploy') {
+	stage('Deploy') {
             steps {
                 docker run --name nginx-container -p 80:80 nginx-container 
             }
