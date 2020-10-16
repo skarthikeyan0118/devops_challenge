@@ -1,0 +1,8 @@
+profile="kgsy"
+ami="ami-0778803ad9d2ff112"
+instance_type="t2.micro"
+sshkeyname="gsy_deployer-key"
+instance_name="nginx-container"
+sgname="nginx-security"
+terraformbucket="nginxremotestate"
+remotestatename="terraform.tfstate"
