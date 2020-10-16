@@ -28,11 +28,11 @@ Terraform resources and modules are created. AWS Credentials are stored in as PR
 while creating terraform , the aws resources and type are called in the code. The AMI that is created using packer is used in the terraform infrastructure creation. 
 AWS resources are stored in as variables for the easy code handling.
 
-Now, my AWS VM instance is ready running with docker and jenkins installed in it.
+Now, AWS VM instance is ready running with docker and jenkins installed in it.
 
 Create Docker file: 
 
-The Docker file contains my app index.html and copy it to my nginx container. 
+The Docker file contains app index.html and copies it to nginx container. 
 
 nginx container is deployed in to VM instances using jenkins file.
 
