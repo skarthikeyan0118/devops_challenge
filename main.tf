@@ -31,7 +31,7 @@ resource "aws_security_group" "nginxsecurity" {
         from_port = 22
         to_port = 22
         protocol = "tcp"
-        cidr_blocks = ["0.0.0.0/0"]
+        cidr_blocks = ["77.4.92.144/32"]
     }
     egress {
         from_port = 0
