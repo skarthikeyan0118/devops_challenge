@@ -3,8 +3,8 @@ pipeline {
     stages {
 	stage('Kill previous running container') {
             steps {
-               sh 'sudo docker kill $(sudo docker ps -q)'
-	       sh 'sudo docker rm $(sudo docker ps -a -q)'
+               sh 'sudo docker stop nginx-container|| true && docker rm nginx-container|| true'
+	       
 		    
             }
         }
