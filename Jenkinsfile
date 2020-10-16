@@ -18,9 +18,9 @@ pipeline {
         }
 	stage('Post deployment test') {
             steps {
-               bash '''	
+               sh '''	
    			 httpcode=`curl -o /dev/null -s -w "%{http_code}\n" http://localhost`
-			 if [[ $httpcode == 200 ]]; then
+			 if [ $httpcode -eq 200 ]; then
 			 	echo -e "test passed. Deployment successful"
 			 	exit 0
 			 else
