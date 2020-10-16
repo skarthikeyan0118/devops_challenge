@@ -18,15 +18,16 @@ pipeline {
         }
 	stage('Post deployment test') {
             steps {
-               sh '''	httpcode=`curl -o /dev/null -s -w "%{http_code}\n" http://localhost`
-	       if [[ $httpcode == 200 ]]; then
-	       echo -e "test passed. Deployment successful"
-	       exit 0
-	       else
-	       echo -e "Deployment failed"
-	       exit 1
-	       fi
-               '''
+               sh '''	
+   			 httpcode=`curl -o /dev/null -s -w "%{http_code}\n" http://localhost`
+			 if [[ $httpcode == 200 ]]; then
+			 	echo -e "test passed. Deployment successful"
+			 	exit 0
+			 else
+				echo -e "Deployment failed"
+				exit 1
+			 fi
+		  '''
 	    }
     }
 }
