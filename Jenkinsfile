@@ -1,6 +1,11 @@
 pipeline {
     agent any 
     stages {
+	stage('Kill previous running container') {
+            steps {
+               sh 'sudo docker kill $(docker ps -q)'
+            }
+        }
         stage('Build Nginx Image') {
             steps {
                sh 'sudo docker build -t nginx-image .'
