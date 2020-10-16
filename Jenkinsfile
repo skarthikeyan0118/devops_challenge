@@ -3,7 +3,7 @@ pipeline {
     stages {
 	stage('Kill previous running container') {
             steps {
-               sh 'sudo docker kill $(docker ps -q)'
+               sh 'sudo docker kill $(sudo docker ps -q)'
             }
         }
         stage('Build Nginx Image') {
