@@ -8,7 +8,7 @@ pipeline {
         }
 	stage('Deploy') {
             steps {
-                sh 'sudo docker run --name nginx-container -p 80:80 nginx-image'
+                sh 'sudo docker run -tid --name nginx-container -p 80:80 nginx-image'
             }
         }
     }
