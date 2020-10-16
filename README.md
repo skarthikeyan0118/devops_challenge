@@ -36,7 +36,7 @@ The Docker file contains my app index.html and copy it to my nginx container.
 
 nginx container is deployed in to VM instances using jenkins file.
 
-When the jenkins file runs on the server, it deploys the nginx container and index.html 
+When the jenkins file built on the pipeline, it deploys the nginx container and index.html 
 
 CI/CD
 
