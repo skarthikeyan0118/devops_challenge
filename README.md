@@ -1,13 +1,9 @@
 # Grid Singularity Devops Challenge  
 
-Your goals for this challenge:
+Steps to create the infrastructure:
 
-1. Create an automation using Terraform or Cloudformation to provision one Linux VM in AWS capable to run docker containers and with the port 80 exposed to the internet.
-2. Create a Dockerfile of a nginx container.
-3. Createa  CI/CD pipeline using Travis/Github Actions/Jenkins to build and deploy the container in the Linux VM.
-4. Create a README with all necessary steps in order to run your automation.
+1. Install packer and from packer install docker and jenkins running on my AWS EC2 Linux VM instances.
+2. Infrastructure is created using terraform and terraform modules. credentials are stored in profiles which is a secure way.
+3. Create a docker file including nginx container and image included in it.
+4. Create a jenkins file and in jenkins file you will see the deployment running stages in blue ocean. 
 
-We would like to see your considerations for credentials handling in this scenario.  
-The challenge is expected to take between 2-4 hours.  
-
-In order to submit your solution a fork of this repo has to be created, and the solution can be committed to the fork.
