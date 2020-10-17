@@ -30,7 +30,7 @@ AWS resources are stored in as variables for the easy code handling.
 
 Now, AWS VM instance is ready running with docker and jenkins installed in it.
 
-**Create Docker file: **
+**Create Docker file:**
 
 The Docker file contains app index.html and copies it to nginx container. 
 
