@@ -5,10 +5,12 @@ Steps to create the infrastructure:
 
 **install packer in your local ubuntu system.**
 
+---
 - $ export VER="1.4.1" 
 - $ wget https://releases.hashicorp.com/packer/${VER}/packer_${VER}_linux_amd64.zip 
 - $ Unzip packer_${VER}_linux_amd64.zip 
 - $ sudo mv packer /usr/local/bin
+---
 
 Once packer is installed , create the packer file packer.json (contents of the packer.json are in the repository)
 
