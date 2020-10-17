@@ -34,11 +34,11 @@ AWS resources are stored in as variables for the easy code handling.
 
 ---
 
-main.tf
-providers.tf
-remote.tf
-terraform.tfvars
-variables.tf
+- main.tf
+- providers.tf
+- remote.tf
+- terraform.tfvars
+- variables.tf
 
 ---
 
@@ -46,9 +46,9 @@ Once all the terraform files are written for the infrastructure creation, Now ch
 
 ---
 
-terraform init
-terraform plan
-terraform apply
+- terraform init
+- terraform plan
+- terraform apply
 
 ---
 
