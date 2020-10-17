@@ -1,4 +1,4 @@
-Adding files and components for deploying docker container in to the VM instances and testing it.
+Adding files and components for deploying docker container in to the AWS Linux VM instances and testing it.
 
 Steps to create the infrastructure:
 
