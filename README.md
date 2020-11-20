@@ -64,7 +64,7 @@ When the jenkins file built on the pipeline, it deploys the nginx container and 
 
 **CI/CD**
 
-To run the jenkins file , here jenkins pipeline is installed and using BlueOcean(from jenkins) we can deploy the docker file and jenkins file.
+To run the jenkins file , jenkins pipeline is installed and using BlueOcean(from jenkins) we can deploy the docker file and jenkins file.
 
 Everytime the code the changed in the github, the pipeline can be triggered and the new changes are rolled out.
 
